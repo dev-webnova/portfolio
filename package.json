@@ -6,8 +6,8 @@
   "source": "src/index.html",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build src/index.html --no-cache",
-    "clean": "rm -rf dist/* .parcel-cache/*"
+    "build": "parcel build src/index.html --no-cache --public-url ./",
+    "clean": "if exist dist rd /s /q dist && if exist .parcel-cache rd /s /q .parcel-cache"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.2",
     "@parcel/watcher": "^2.5.1",
+    "@netlify/plugin-parcel": "^1.0.0",
     "parcel": "^2.8.2",
     "parcel-reporter-static-files-copy": "^1.5.3",
     "prettier": "^2.8.1"
@@ -32,6 +33,7 @@
     "bootstrap": "^5.2.3",
     "jquery": "^3.6.3",
     "popper.js": "^1.16.1",
-    "vanilla-tilt": "^1.8.0"
+    "vanilla-tilt": "^1.8.0",
+    "yarn": "^1.22.22"
   }
 }
