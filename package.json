@@ -5,15 +5,15 @@
   "description": "A clean, beautiful and responsive portfolio template for Developers!",
   "source": "src/index.html",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build"
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cobiwave/simplefolio"
   },
   "keywords": [],
-  "author": "Jacobo Martinez",
+  "author": "WEBNOVA",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/cobiwave/simplefolio/issues"
