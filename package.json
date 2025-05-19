@@ -23,7 +23,6 @@
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.2",
     "@parcel/watcher": "^2.5.1",
-    "@netlify/plugin-parcel": "^1.0.0",
     "parcel": "^2.8.2",
     "parcel-reporter-static-files-copy": "^1.5.3",
     "prettier": "^2.8.1"
