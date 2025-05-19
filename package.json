@@ -6,7 +6,8 @@
   "source": "src/index.html",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/index.html --no-cache",
+    "clean": "rm -rf dist/* .parcel-cache/*"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,9 @@
   "homepage": "https://github.com/cobiwave/simplefolio#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.2",
+    "@parcel/watcher": "^2.5.1",
     "parcel": "^2.8.2",
+    "parcel-reporter-static-files-copy": "^1.5.3",
     "prettier": "^2.8.1"
   },
   "dependencies": {
