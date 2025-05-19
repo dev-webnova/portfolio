@@ -1,14 +1,12 @@
-build =
-    command = npm install && npm run build
-    commandOrigin = config
+[build]
+  command = "npm install && npm run build"
+  commandOrigin = "config"
+  publish = "/opt/build/repo/dist"
+  publishOrigin = "config"
 
-environment =
-      - NODE_VERSION
-      - NPM_FLAGS
-    publish = /opt/build/repo/dist
-    publishOrigin = config
+[build.environment]
+  NODE_VERSION = "16"
+  NPM_FLAGS = ""
 
-plugins = 
-    - inputs = {}
-      origin = config
-      package= '@netlify/plugin-parcel'
+[[plugins]]
+  package = "@netlify/plugin-parcel"
