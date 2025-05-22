@@ -9,6 +9,10 @@
   padding: 0rem 5.6rem;
   position: relative;
 
+  @include respond(phone) {
+    padding: 0rem 2rem;
+  }
+
   &::before {
     content: '';
     position: absolute;
@@ -29,14 +33,19 @@
     margin-bottom: 3.2rem;
     text-align: left;
 
+    @include respond(tab-port) {
+      font-size: 4rem;
+    }
+
+    @include respond(phone) {
+      font-size: 3.2rem;
+      text-align: center;
+    }
+
     .text-color-main {
-      background: linear-gradient(to right, $primary-color, lighten($primary-color, 20%));
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-      text-shadow:
-        0 0 5px rgba($primary-color, 0.5),
-        0 0 10px rgba($primary-color, 0.3);
+      @include respond(phone) {
+        font-size: 3.5rem;
+      }
     }
   }
 }

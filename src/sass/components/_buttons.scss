@@ -17,6 +17,19 @@
     color: $background-dark;
     box-shadow: 0 0 15px rgba($secondary-color, 0.5);
   }
+
+  @include respond(phone) {
+    padding: 0.8rem 2rem;
+    font-size: 1.6rem;
+  }
+
+  &--hero {
+    @include respond(phone) {
+      width: 80%;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  }
 }
 
 .cta-btn--hero {
